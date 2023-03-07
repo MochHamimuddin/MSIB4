@@ -4,7 +4,7 @@ Rincian materi kampus merderka batch 4
 -Github
 -php 
 -mysql
-
+final project
 implementasi adding (git add)
 menandai file yang disebut commit (git commit)
 setelah itu commit new file disebut push (git push)

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas1JS</title>
+  </head>
+  <body>
+    <script>
+      /*deklarasi dan inisiasi variabel*/
+      var nama = "Siti Aminah";
+      var produk = "kulkas";
+      var jml_beli = "1";
+      var harga_kotor = "";
+      /*If Multikondisi*/
+      if (produk == "TV") harga_kotor = 3000000 * jml_beli;
+      else if (produk == "kulkas") harga_kotor = 4000000 * jml_beli;
+      else if (produk == "mesin cuci") harga_kotor = 5000000 * jml_beli;
+      else 0;
+      /*ternary diskon*/
+      var dskn = "";
+      if (jml_beli == "3") dskn = 0.25 * harga_kotor;
+      else dskn = 0.1 * harga_kotor;
+      var diskon = "";
+      diskon = jml_beli > 2 ? "25%" : "10%";
+      let ppn = 0.11 * (harga_kotor - dskn);
+      let bayar = harga_kotor - dskn + ppn;
+      document.write("Nama : " + nama + "<br/>Produk : " + produk + "<br/>Jumlah Produk : " + jml_beli + "<br/>Sub total : " + harga_kotor + "<br/>Diskon : " + diskon + "<br/>PPN :  " + ppn + "<br/>Total : " + bayar);
+    </script>
+  </body>
+</html>
